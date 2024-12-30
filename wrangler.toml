@@ -1,5 +1,8 @@
 name = "version-checker-api"
-compatibility_date = "2023-12-01"
+main = "src/index.ts"
+compatibility_date = "2024-12-30"
+
+# compatibility_flags = [ "nodejs_compat" ]
 
 # [vars]
 # MY_VAR = "my-variable"
@@ -19,3 +22,7 @@ compatibility_date = "2023-12-01"
 
 # [ai]
 # binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1

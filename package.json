@@ -1,18 +1,15 @@
 {
   "name": "version-checker-api",
-  "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
-    "elysia": "latest",
-    "octokit": "^4.0.3",
-    "wrangler": "^3.99.0"
+    "hono": "^4.6.15",
+    "octokit": "^4.0.3"
   },
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+    "@cloudflare/workers-types": "^4.20241218.0",
+    "wrangler": "^3.96.0"
+  }
 }
