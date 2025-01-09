@@ -10,7 +10,7 @@ export class GitHubService {
     });
 
     return {
-      version: data.tag_name,
+      version: data.tag_name.replace(/^v/, ''),
       published_at: data.published_at!,
       html_url: data.html_url
     };
